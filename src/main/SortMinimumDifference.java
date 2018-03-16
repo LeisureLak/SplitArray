@@ -60,6 +60,8 @@ public class SortMinimumDifference {
                             arrLeft[temp] = 0;
                         }
                         break;
+                    }else{
+                        diffPre =  diffNow;
                     }
                 }
                 arrList.add(arrLeft);
