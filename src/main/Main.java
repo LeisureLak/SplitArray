@@ -4,9 +4,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] arr = {2,1,19,7,8,100,30,0,23,44,13,11,104,200,108};
+        int[] arr = {-15,-16,-17,-100,99,28,13};
         int[] sortedArr = SortMinimumDifference.sortOriArray(arr);
         List<int[]> sorted2Arr = SortMinimumDifference.splitArray(arr);
+        if(null == sorted2Arr){
+            return;
+        }
         System.out.print("原数组为：{");
         for(int i = 0 ;i < arr.length; i ++){
             System.out.print(arr[i] + " ");
